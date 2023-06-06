@@ -1,0 +1,61 @@
+.talk {
+  margin: 20px 0;
+  color: #1e1d1dd8;
+  display: flex;
+  gap: 10px;
+  font-size: 15px;
+  width: 50%;
+}
+
+.talk .p {
+  padding: 15px;
+  line-height: 25px;
+  background-color: #1e1d1d;
+  color: white;
+  position: relative;
+}
+
+.right {
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+.left {
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  width: 250px;
+}
+
+.right .p {
+  border-radius: 5px 10px 10px 10px;
+  margin-right: 10px;
+  background-color: rgb(76, 83, 80);
+}
+.left .p {
+  border-radius: 5px 10px 10px 10px;
+}
+.left .p::after {
+  content: "";
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  right: -0.4rem;
+  top: 10px;
+  transform: rotate(45deg);
+  background-color: #1e1d1d;
+}
+.right .p::after {
+  content: "";
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  left: -0.4rem;
+  top: 10px;
+  transform: rotate(45deg);
+  background-color: rgb(76, 83, 80);
+}
